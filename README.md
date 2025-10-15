@@ -32,4 +32,4 @@ Você pode visualizar o protótipo original no Figma:
 🔗 Acessar Figma
 
 👨‍💻 Desenvolvido por
-Bruno Oliveira — para o desafio da DNC Technologies 🚀
+João Pedro — para o desafio da DNC Technologies 🚀
