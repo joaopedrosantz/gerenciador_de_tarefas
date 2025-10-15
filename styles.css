@@ -1,0 +1,231 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Raleway";
+}
+
+body {
+    background: #F5F9FF;
+    display: flex;
+    justify-content: center;
+}
+
+#tasks-box {
+    width: 50vw;
+    min-width: 35rem;
+    background: #FFFFFF;
+    box-shadow: 0 0 0.25rem 0 #00000040;
+    border-radius: 1rem;
+    margin-top: 7rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-btn {
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #2D70FD;
+    background: #2D70FD;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 110%;
+    letter-spacing: 1%;
+    text-align: center;
+    height: 3rem;
+}
+
+.task-btn:hover {
+    opacity: .8;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#tasks-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 1%;
+    color: #11175E;
+}
+
+#tasks-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.task-input {
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #EEEEEE;
+    color: #B1BACB;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 110%;
+    letter-spacing: 1%;
+    height: 3rem;
+    padding-left: 2rem;
+    flex: 1;
+    min-width: 0;
+}
+
+#checked {
+    width: 3rem;
+}
+
+/* MAIN - TASKS */
+
+main {
+    padding: 1.5rem 0;
+}
+
+#tasks-list {
+    padding: 0;
+}
+
+.task-box {
+    border-radius: 1rem;
+    border: 0.0625rem solid #EEEEEE;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-box:last-child {
+    margin-bottom: 0rem;
+}
+
+.task-box-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task-box-texts h1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 110%;
+    letter-spacing: 1%;
+    color: #001747;
+}
+
+.task-box-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tasks-box-itens-tag {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 110;
+    letter-spacing: 1%;
+    color: #B1BACB;
+    border: 1px solid #B1BACB;
+    border-radius: 1rem;
+    padding: 0.1rem 0.5rem;
+}
+
+.task-box-itens p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 110%;
+    letter-spacing: 1%;
+    color: #B1BACB;
+}
+
+.task-box-button {
+    padding: 0 2rem;
+}
+
+.task-checked {
+    color: #8F98A8 !important;
+    text-decoration: line-through;
+}
+
+/* FOOTER */
+
+#tasks-checked-total {
+    border-top: 0.0625rem solid #EEEEEE;
+    color: #B1BACB;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 110%;
+    letter-spacing: 1%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    height: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+    /* GENERAL */
+
+    #tasks-box {
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        min-width: auto;
+    } 
+    
+    /* HEADER */
+    
+    #tasks-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-input {
+        flex: auto;
+    }
+
+    #checked {
+        width: 100%;
+    }
+
+    /* MAIN - TASKS */
+
+    .task-box {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    .task-box-itens {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    img {
+        align-self: center;
+    }
+
+    .task-box-button {
+        align-self: center;
+    }
+}
